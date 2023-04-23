@@ -1,0 +1,24 @@
+Can the user change?,Factors,Value(s),Summary
+Yes,Inflation,5/5.5/6.5 (%),"Inflation is the rate of increase in prices over a given period of time. In this case, we can assume this affects items such as cat food or vet visits."
+Yes,Demand for cats,norm.dist * (1+x)^y,The rate of cats being bought as pets in Singapore
+,,x: growth rate,
+Yes,safety stock,20,The minimum number of stock left in the inventory before a reorder is triggered to the factory.
+Yes,Type of truck,Truck A,User can swap between trucks of different capacities
+,,Truck B,
+Yes,reorder quantity,20,Number of syringes to be produced each batch during a reorder
+Yes,# of workers in each station,2 max per station,How many active workers in each station
+No,capacity of truck,Truck A= 20,Max inventory size of a truck
+,,Truck B= 40,
+No,Cost of each truck,Truck A: $100,Price of truck per delivery
+,,Truck B: $150,
+No,abandonment rate,norm.dist * (1+inflation)^y,The rate at which home cats are being abandoned.
+No,rate of neutering cats,10 mins,The rate of completed neuter process of stray cats in TNR stations
+No,production rate of syringes,1 hr / batch,The rate of production of syringes in the factory
+No,packing rate of syringes,15 s,Determine how fast a single syringe in being packed into the truck
+No,unpacking rate of syringes,10 s,Determine how fast a single syringe in being unpacked into the truck
+No,Stray cat rate of breeding,#strays * breeding_rate,Determines how often stray cats reproduce when unneutered
+No,delivery distance,All= 1.5 hr,Distance needed to travel to respective station
+,(East-central-west),,
+No,Inventory holding costs,$0.10 per syringe (at end of day),Determines how much total expenses to pay from holding excess inventory
+No,Cost of syringes,$5 per syringe,Price of producing syringes
+No,Cost of workers,$10/hr,Hourly wage of working in the TNR station

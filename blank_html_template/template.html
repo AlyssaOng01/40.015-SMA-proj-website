@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Note: 1 level up for bootstrap css directory if this one is in one of the subfolders
+    Remove the ../ if it's from home directory -->
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+    <!-- This segment is for custom importing fonts and whatever fancy shit
+    Go to https://bootstrapbay.com/blog/google-web-fonts/ to see how to use google web fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+    <title>Template with Bootstrap</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div class="container custom-container">
+
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-2 pt-1">
+                    <a href="../bootstrap_index.html" class="btn btn-dark">
+                         Home
+                    </a>
+                </div>
+                <div class="col-8 text-center">
+                    <h2 style="color: DarkCyan;">Page Title</h2>
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center">
+                </div>
+            </div>
+        </header>
+        <hr>
+
+        <!-- To make life easier for you, put everything in this container div
+        Edit the header as you wish and start from here -->
+
+    </div>
+</body>
+
+</html>
+
+<style>
+	.custom-container {
+		width: 90%;
+		margin: 0 auto;
+		max-width: none;
+	}
+</style>

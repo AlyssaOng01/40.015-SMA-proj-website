@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+	<!-- Note: 1 level up for bootstrap css directory if this one is in one of the subfolders
+    Remove the ../ if it's from home directory -->
+	<link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+	<!-- This segment is for custom importing fonts and whatever fancy shit
+    Go to https://bootstrapbay.com/blog/google-web-fonts/ to see how to use google web fonts -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+
+	<title>Template with Bootstrap</title>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+	<div class="container custom-container">
+		<header class="blog-header py-3">
+			<div class="row flex-nowrap justify-content-between align-items-center">
+				<div class="col-2 pt-1">
+					<a href="../bootstrap_index.html" class="btn btn-dark">
+						Home
+					</a>
+				</div>
+				<div class="col-8 text-center">
+					<h2 style="color: darkcyan;">Project Schedule</h2>
+				</div>
+				<div class="col-2 d-flex justify-content-end align-items-center">
+				</div>
+			</div>
+		</header>
+		<hr>
+
+		<div class="text-center">
+			<!-- <div id="markdown-content"></div>
+
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+			<script>
+				var markdownText = "# Hello, world!\n\nThis is some **bold** text.";
+				var html = marked(markdownText);
+				$('#markdown-content').html(html);
+			</script> -->
+
+
+			<div class="row">
+				<div class="col-md-10 offset-md-1">
+					<img class="img-fluid m-2" src="images/gantt.png" alt="">
+					<div class="caption font-italic text-center">Our project timeline</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+
+</html>
+
+<style>
+	.custom-container {
+		width: 90%;
+		margin: 0 auto;
+		max-width: none;
+	}
+</style>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+	<!-- Note: 1 level up for bootstrap css directory if this one is in one of the subfolders
+    Remove the ../ if it's from home directory -->
+	<link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+	<!-- This segment is for custom importing fonts and whatever fancy shit
+    Go to https://bootstrapbay.com/blog/google-web-fonts/ to see how to use google web fonts -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+	<title>Template with Bootstrap</title>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+	<div class="container custom-container">
+		<header class="blog-header py-3">
+			<div class="row flex-nowrap justify-content-between align-items-center">
+				<div class="col-2 pt-1">
+					<a href="../bootstrap_index.html" class="btn btn-dark">
+						Home
+					</a>
+				</div>
+				<div class="col-8 text-center">
+					<h2 style="color: DarkCyan;">Abstract and Motivation</h2>
+				</div>
+				<div class="col-2 d-flex justify-content-end align-items-center">
+				</div>
+			</div>
+		</header>
+		<hr>
+
+		<div class="jumbotron p-3 p-md-4 my-auto text-white rounded bg-dark">
+			<div class="row px-3 justify-content-center">
+				<div class="col">
+					<h5 class="lead my-3">Abstract:</h5>
+					<p>The simulation is able to reflect different scenarios based on the user's selection of different
+						input variables.</p>
+					<p>The user has different values depending on which variable they are allowed to change, such as
+						switching the rate of inflation from value A to value B.</p>
+					<p>Additional, the user needs to manage the TNR efforts through decisions on how to manage its
+						queues, inventory, type of delivery and amount of workers in the stations. Most of the factors
+						are attached to a cost, so optimizing their numbers within the given scenario is key in reducing
+						both costs and mega-zombies.</p>
+					<p>Singapore has a growing issue is its number of cats. Furthermore, if the policy to ban cats
+						living in HDB is lifted, there will be an exponential surge in the amount of cats living in
+						Singapore. Potential rising inflation rates could then hike up the cost of keeping a cat and
+						thus force owners to abandonment them.</p>
+					<p>Finally, strays cats which are not neutered tend to breed excessively which leads to the
+						proliferation public health hazards such as bacteria growth.</p>
+
+					<hr>
+
+					<h5 class="lead my-3">Motivation:</h5>
+					<p>We hope to simulate the effects of pet abandonment and the effectiveness of
+						TNR(Trap-Neuter-Release), to raise awareness on the effects of animal abandonment and abuse.</p>
+
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+	</div>
+</body>
+
+</html>
+
+<style>
+	.custom-container {
+		width: 90%;
+		margin: 0 auto;
+		max-width: none;
+	}
+</style>

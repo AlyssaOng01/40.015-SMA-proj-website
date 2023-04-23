@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<!-- Note: 1 level up for bootstrap css directory if this one is in one of the subfolders
+    Remove the ../ if it's from home directory -->
+	<link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+	<!-- This segment is for custom importing fonts and whatever fancy shit
+    Go to https://bootstrapbay.com/blog/google-web-fonts/ to see how to use google web fonts -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+	<title>Template with Bootstrap</title>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+	<div class="container custom-container">
+
+		<header class="blog-header py-3">
+			<div class="row flex-nowrap justify-content-between align-items-center">
+				<div class="col-2 pt-1">
+					<a href="../bootstrap_index.html" class="btn btn-dark">
+						Home
+					</a>
+				</div>
+				<div class="col-8 text-center">
+					<h2 style="color: DarkCyan;">Data Collection and Manipulation</h2>
+				</div>
+				<div class="col-2 d-flex justify-content-end align-items-center">
+				</div>
+			</div>
+		</header>
+		<hr>
+
+		<div class="text-center">
+			In our simulation, the user can control certain variables that ultimately affect the outcome of the simulation run. Here is a list of variables in our JaamSim model:
+		</div>
+
+		<br><br><br>
+
+		<div class="d-flex justify-content-center">
+			<div class="row justify-content-center">
+				<div class="col-8">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Can the user change?</th>
+								<th>Factors</th>
+								<th>Value(s)</th>
+								<th>Summary</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Yes</td>
+								<td>Inflation</td>
+								<td>5/5.5/6.5 (%)</td>
+								<td>Inflation is the rate of increase in prices over a given period of time.&nbsp;&nbsp;&nbsp;In
+									this case, we can assume this affects items such as cat food or vet&nbsp;&nbsp;&nbsp;visits.
+								</td>
+							</tr>
+							<tr>
+								<td>Yes</td>
+								<td>Demand for cats</td>
+								<td>norm.dist * (1+x)^y (x: growth rate)</td>
+								<td>The rate of cats being bought as pets in Singapore</td>
+							</tr>
+							<tr>
+								<td>Yes</td>
+								<td>safety stock</td>
+								<td>20</td>
+								<td>The minimum number of stock left in the inventory before a reorder is&nbsp;&nbsp;&nbsp;triggered
+									to the factory.</td>
+							</tr>
+							<tr>
+								<td>Yes</td>
+								<td>Type of truck</td>
+								<td>Truck A <br> Truck B</td>
+								<td>User can swap between trucks of different capacities</td>
+							</tr>
+							<tr>
+								<td>Yes</td>
+								<td>reorder quantity</td>
+								<td>20</td>
+								<td>Number of syringes to be produced each batch during a reorder</td>
+							</tr>
+							<tr>
+								<td>Yes</td>
+								<td># of workers in each station</td>
+								<td>2 max per station</td>
+								<td>How many active workers in each station</td>
+							</tr>
+							<tr>
+								<td>No</td>
+								<td>capacity of truck</td>
+								<td>Truck A= 20 <br> Truck B= 40</td>
+								<td>Max inventory size of a truck</td>
+							</tr>
+							<tr>
+								<td>No</td>
+								<td>Cost of each truck</td>
+								<td>Truck A: $100 <br> Truck B: $150</td>
+								<td>Price of truck per delivery</td>
+							</tr>
+							<tr>
+								<td>No</td>
+								<td>abandonment rate</td>
+								<td>norm.dist * (1+inflation)^y</td>
+								<td>The rate at which home cats are being abandoned.</td>
+							</tr>
+							<tr>
+								<td>No</td>
+								<td>rate of neutering cats</td>
+								<td>10 mins</td>
+								<td>The rate of completed neuter process of stray cats in TNR stations</td>
+							</tr>
+							<tr>
+								<td>No</td>
+								<td>production rate of syringes</td>
+								<td>1 hr / batch</td>
+								<td>The rate of production of syringes in the factory</td>
+							</tr>
+							<tr>
+								<td>No</td>
+								<td>packing rate of syringes</td>
+								<td>15 s</td>
+								<td>Determine how fast a single syringe in being packed into the truck</td>
+							</tr>
+							<tr>
+								<td>No</td>
+								<td>unpacking rate of syringes</td>
+								<td>10 s</td>
+								<td>Determine how fast a single syringe in being unpacked into the truck</td>
+							</tr>
+							<tr>
+								<td>No</td>
+								<td>Stray cat rate of breeding</td>
+								<td>#strays * breeding_rate</td>
+								<td>Determines how often stray cats reproduce when unneutered</td>
+							</tr>
+							<tr>
+								<td>No</td>
+								<td>delivery distance (East-central-west)</td>
+								<td>All= 1.5 hr</td>
+								<td>Distance needed to travel to respective station</td>
+							</tr>
+							<tr>
+								<td>No</td>
+								<td>Inventory holding costs</td>
+								<td>$0.10 per syringe (at end of day)</td>
+								<td>Determines how much total expenses to pay from holding excess inventory</td>
+							</tr>
+							<tr>
+								<td>No</td>
+								<td>Cost of syringes</td>
+								<td>$5 per syringe</td>
+								<td>Price of producing syringes</td>
+							</tr>
+							<tr>
+								<td>No</td>
+								<td>Cost of workers</td>
+								<td>$10/hr</td>
+								<td>Hourly wage of working in the TNR station</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+</body>
+
+</html>
+
+<style>
+	.custom-container {
+		width: 90%;
+		margin: 0 auto;
+		max-width: none;
+	}
+</style>
